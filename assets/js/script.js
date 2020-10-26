@@ -1,11 +1,7 @@
-let score = document.getElementById("score");
+const scoreTarget = document.getElementById("score");
 let score = 0;
 
-score.addEventListener("click", () => {
-    let score = parseInt(score.innerHTML);
-    score++;
-    score.innerHTML += 1 * multiplier;
+scoreTarget.addEventListener("click", () => {
+    score += 1 * multiplier;
+    scoreTarget.innerHTML = score;
 })
-
-
-
