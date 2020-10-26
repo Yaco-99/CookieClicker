@@ -79,16 +79,16 @@ function newHero() {
 
 function displayNone() {
   score < multiplierPrice
-    ? multiplierShop.classList.add("d-none")
-    : multiplierShop.classList.remove("d-none");
+    ? multiplierShop.setAttribute("disabled", true)
+    : multiplierShop.removeAttribute("disabled");
   score < heroPrice
-    ? heroTarget.classList.add("d-none")
-    : heroTarget.classList.remove("d-none");
+    ? heroTarget.setAttribute("disabled", true)
+    : heroTarget.removeAttribute("disabled");
   bonusCheck
     ? "ok"
     : score < 600
-    ? timerTarget.classList.add("d-none")
-    : timerTarget.classList.remove("d-none");
+    ? timerTarget.setAttribute("disabled", true)
+    : timerTarget.removeAttribute("disabled");
 }
 function displayScore() {
   scoreTarget.innerHTML = score;
