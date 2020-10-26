@@ -1,19 +1,21 @@
 .cookie{
-    
     background: #2193b0;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    text-align: center;
+    background: -webkit-linear-gradient(to bottom, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding:2rem;
     font-weight: 700;
-    
+    justify-content: center;
     #cookie{
         background-image: url(../img/cookie_01.svg);
-        background-position: center center;
+        background-position: center;
         background-repeat: no-repeat;
-
+        align-self: center;
         background-size: 20rem;
         width: 25rem;
-        height: 40rem;
+        height: 53.5rem;
+    }
+    .score{
+        justify-self: center;
+        text-align: center;
     }
 }
