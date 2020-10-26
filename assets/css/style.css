@@ -4,6 +4,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap%27");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10800,5 +10801,96 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+body {
+  font-family: "Titillium Web", sans-serif;
+}
+
+body .copyright {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: -1rem;
+}
+
+.cookie {
+  width: 33vw;
+  height: 100vh;
+  background: #2193b0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#6dd5ed), to(#2193b0));
+  background: linear-gradient(to bottom, #6dd5ed, #2193b0);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 2rem;
+  font-weight: 700;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cookie #cookie {
+  width: 80%;
+  height: 60%;
+  background-image: url(../img/cookie_01.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-size: contain;
+}
+
+.cookie .score {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+}
+
+.shop {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+.shop button {
+  background: #f2c77b;
+  border: #6a4436 5px solid;
+  padding: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.shop img {
+  margin-top: 15rem;
+}
+
+.regle {
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.regle img {
+  height: 35rem;
 }
 /*# sourceMappingURL=style.css.map */

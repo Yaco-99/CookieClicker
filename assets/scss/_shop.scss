@@ -1,0 +1,16 @@
+.shop{
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+
+    button{
+        background: #f2c77b;
+        border: #6a4436 5px solid;
+        padding: 1rem;
+        align-self: center;
+    }
+    img{
+        margin-top:15rem;
+    }
+}

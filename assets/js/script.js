@@ -1,8 +1,9 @@
 const scoreTarget = document.getElementById("score"),
-  timerTarget = document.getElementById("bonus"),
-  multiplierShop = document.getElementById("multiplierShop"),
-  heroTarget = document.getElementById("hero"),
-  buySound = document.getElementById("buySound");
+  cookie = document.getElementById("cookie");
+(timerTarget = document.getElementById("bonus")),
+  (multiplierShop = document.getElementById("multiplierShop")),
+  (heroTarget = document.getElementById("hero")),
+  (buySound = document.getElementById("buySound"));
 let score = 2000,
   multiplierPrice = 200,
   multiplier = 1,
@@ -15,7 +16,7 @@ let score = 2000,
 
 displayScore();
 
-scoreTarget.addEventListener("click", () => {
+cookie.addEventListener("click", () => {
   console.log(bonus);
   bonusCheck ? (bonus = 2) : (bonus = 1);
   score += 1 * multiplier * bonus;
@@ -51,34 +52,28 @@ timerTarget.addEventListener("click", () => {
 });
 
 function multiplierBuy() {
-  if (score > multiplierPrice) {
-    multiplier++;
-    score = score - multiplierPrice;
-    multiplierPrice = multiplierPrice * 2;
-    document.getElementById("multiplier").innerHTML = `X ${multiplier}`;
-    multiplierShop.innerHTML = `X${multiplier + 1} (${multiplierPrice})`;
-    displayScore();
-  } else {
-    alert("You don't have enough cookie !");
-  }
+  multiplier++;
+  score = score - multiplierPrice;
+  multiplierPrice = multiplierPrice * 2;
+  document.getElementById("multiplier").innerHTML = `X ${multiplier}`;
+  multiplierShop.innerHTML = `X${multiplier + 1} (${multiplierPrice})`;
+  displayScore();
 }
+
 function newHero() {
   if (hero == 1000) {
     alert("Your team is full");
     return;
   }
-  if (score > heroPrice) {
-    timing = 1000 - hero;
-    score = score - heroPrice;
-    heroPrice = heroPrice * 3;
-    heroTarget.innerHTML = `Hero (${heroPrice})`;
-    hero += 200;
-    displayScore();
-    interval ? clearInterval(interval) : "not";
-    interval = setInterval(autoClicker, timing);
-  } else {
-    alert("You don't have enough cookie !");
-  }
+
+  timing = 1000 - hero;
+  score = score - heroPrice;
+  heroPrice = heroPrice * 3;
+  heroTarget.innerHTML = `Hero (${heroPrice})`;
+  hero += 200;
+  displayScore();
+  interval ? clearInterval(interval) : "not";
+  interval = setInterval(autoClicker, timing);
 }
 
 function displayNone() {
