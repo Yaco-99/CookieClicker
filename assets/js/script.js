@@ -1,5 +1,7 @@
 const scoreTarget = document.getElementById("score"),
-  timerTarget = document.getElementById("bonus");
+  timerTarget = document.getElementById("bonus"),
+  multiplierShop = document.getElementById("multiplierShop"),
+  heroTarget = document.getElementById("hero");
 let score = 0,
   multiplierPrice = 200,
   multiplier = 1,
@@ -10,6 +12,8 @@ let score = 0,
   bonusCheck = false,
   bonus = 1;
 
+displayScore();
+
 scoreTarget.addEventListener("click", () => {
   console.log(bonus);
   bonusCheck ? (bonus = 2) : (bonus = 1);
@@ -17,18 +21,19 @@ scoreTarget.addEventListener("click", () => {
   displayScore();
 });
 
-document.getElementById("multiplierShop").addEventListener("click", () => {
+multiplierShop.addEventListener("click", () => {
   multiplierBuy();
 });
 
-document.getElementById("hero").addEventListener("click", () => {
+heroTarget.addEventListener("click", () => {
   newHero();
 });
 
-document.getElementById("bonus").addEventListener("click", () => {
+timerTarget.addEventListener("click", () => {
   score -= 600;
   bonusCheck = true;
   let timeLeft = 30;
+  timerTarget.setAttribute("disabled", true);
   let timer = setInterval(function timer() {
     timeLeft--;
     timerTarget.innerHTML = `Time left : ${timeLeft}`;
@@ -37,6 +42,7 @@ document.getElementById("bonus").addEventListener("click", () => {
     bonusCheck = false;
     clearTimeout(timer);
     timerTarget.innerHTML = `BONUS 200% (600)`;
+    timerTarget.removeAttribute("disabled");
   }, 30000);
 });
 
@@ -46,9 +52,7 @@ function multiplierBuy() {
     score = score - multiplierPrice;
     multiplierPrice = multiplierPrice * 2;
     document.getElementById("multiplier").innerHTML = `X ${multiplier}`;
-    document.getElementById("multiplierShop").innerHTML = `X${
-      multiplier + 1
-    } (${multiplierPrice})`;
+    multiplierShop.innerHTML = `X${multiplier + 1} (${multiplierPrice})`;
     displayScore();
   } else {
     alert("You don't have enough cookie !");
@@ -63,7 +67,7 @@ function newHero() {
     timing = 1000 - hero;
     score = score - heroPrice;
     heroPrice = heroPrice * 3;
-    document.getElementById("hero").innerHTML = `Hero (${heroPrice})`;
+    heroTarget.innerHTML = `Hero (${heroPrice})`;
     hero += 200;
     displayScore();
     interval ? clearInterval(interval) : "not";
@@ -72,8 +76,23 @@ function newHero() {
     alert("You don't have enough cookie !");
   }
 }
+
+function displayNone() {
+  score < multiplierPrice
+    ? multiplierShop.classList.add("d-none")
+    : multiplierShop.classList.remove("d-none");
+  score < heroPrice
+    ? heroTarget.classList.add("d-none")
+    : heroTarget.classList.remove("d-none");
+  bonusCheck
+    ? "ok"
+    : score < 600
+    ? timerTarget.classList.add("d-none")
+    : timerTarget.classList.remove("d-none");
+}
 function displayScore() {
   scoreTarget.innerHTML = score;
+  displayNone();
 }
 
 function autoClicker() {
