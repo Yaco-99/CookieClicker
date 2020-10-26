@@ -10810,21 +10810,21 @@ body {
 body .copyright {
   text-align: center;
   font-size: 1rem;
-  margin-top: -1rem;
+  margin-top: -2rem;
+  color: #fff;
 }
 
 .cookie {
   background: #2193b0;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, left top, left bottom, from(#6dd5ed), to(#2193b0));
   background: linear-gradient(to bottom, #6dd5ed, #2193b0);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 2rem;
   font-weight: 700;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100vh;
+  border: #000 2ps solid;
 }
 
 .cookie #cookie {
@@ -10835,14 +10835,8 @@ body .copyright {
       -ms-grid-row-align: center;
       align-self: center;
   background-size: 20rem;
-  width: 25rem;
-  height: 47rem;
-}
-
-.cookie .score {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  text-align: center;
+  width: 20rem;
+  height: 20rem;
 }
 
 .shop {
@@ -10856,6 +10850,7 @@ body .copyright {
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
+  height: 100vh;
 }
 
 .shop button {
@@ -10868,7 +10863,15 @@ body .copyright {
 }
 
 .shop img {
-  margin-top: 15rem;
+  margin-top: 7rem;
+}
+
+.shop .score {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
 }
 
 .regle {
@@ -10881,8 +10884,10 @@ body .copyright {
           flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
+  height: 100vh;
 }
 
 .regle img {
   height: 35rem;
+  margin-top: 1rem;
 }

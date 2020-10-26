@@ -3,7 +3,7 @@
     flex-direction: column;
     align-content: center;
     text-align: center;
-
+    height: 100vh;
     button{
         background: #f2c77b;
         border: #6a4436 5px solid;
@@ -11,6 +11,12 @@
         align-self: center;
     }
     img{
-        margin-top:15rem;
+        margin-top:7rem;
+    }
+    .score{
+        justify-self: center;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 900;
     }
 }
