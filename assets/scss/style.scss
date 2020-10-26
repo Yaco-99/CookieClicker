@@ -5,7 +5,14 @@
 
 body {
     font-family: 'Titillium Web', sans-serif;
+    .copyright{
+        text-align: center;
+        font-size:1rem;
+        margin-top: -1rem;
+    }
 }
+
 
 @import 'cookie';
 @import 'shop';
+@import 'regle';

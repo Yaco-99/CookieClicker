@@ -10807,6 +10807,12 @@ body {
   font-family: 'Titillium Web', sans-serif;
 }
 
+body .copyright {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: -1rem;
+}
+
 .cookie {
   background: #2193b0;
   /* fallback for old browsers */
@@ -10830,7 +10836,7 @@ body {
       align-self: center;
   background-size: 20rem;
   width: 25rem;
-  height: 53.5rem;
+  height: 47rem;
 }
 
 .cookie .score {
@@ -10840,5 +10846,43 @@ body {
 }
 
 .shop {
-  font-size: large;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+.shop button {
+  background: #f2c77b;
+  border: #6a4436 5px solid;
+  padding: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.shop img {
+  margin-top: 15rem;
+}
+
+.regle {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.regle img {
+  height: 35rem;
 }
