@@ -10810,7 +10810,6 @@ body {
 body .copyright {
   text-align: center;
   font-size: 1rem;
-  margin-top: -1rem;
 }
 
 .cookie {
@@ -10845,16 +10844,11 @@ body .copyright {
   background-size: contain;
 }
 
-.cookie .score {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  text-align: center;
-}
-
 .shop {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  max-height: 100vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -10874,11 +10868,24 @@ body .copyright {
 }
 
 .shop img {
-  margin-top: 15rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.score {
+  font-size: 2rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
 }
 
 .regle {
-  height: 100vh;
+  overflow: hidden;
+  color: black;
+  max-height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -10891,6 +10898,11 @@ body .copyright {
 }
 
 .regle img {
+  margin-bottom: -10rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
   height: 35rem;
 }
 /*# sourceMappingURL=style.css.map */

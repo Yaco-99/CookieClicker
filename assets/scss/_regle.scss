@@ -1,11 +1,18 @@
 .regle {
-  height: 100vh;
+  overflow: hidden;
+  color: black;
+  max-height: 100vh;
   justify-content: center;
   flex-direction: column;
   align-content: center;
   //text-align: center;
 
   img {
+    margin-bottom: -10rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
     height: 35rem;
   }
 }

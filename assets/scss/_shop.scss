@@ -1,16 +1,26 @@
-.shop{
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-    text-align: center;
+.shop {
+  max-height: 100vh;
+  justify-content: space-between;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
 
-    button{
-        background: #f2c77b;
-        border: #6a4436 5px solid;
-        padding: 1rem;
-        align-self: center;
-    }
-    img{
-        margin-top:15rem;
-    }
+  button {
+    background: #f2c77b;
+    border: #6a4436 5px solid;
+    padding: 1rem;
+    align-self: center;
+  }
+  img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
+.score {
+  font-size: 2rem;
+  justify-self: center;
+  text-align: center;
 }
