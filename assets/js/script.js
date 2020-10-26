@@ -44,9 +44,10 @@ function newHero() {
 
 function displayNone() {
     let display = document.querySelectorAll(".display");
-    if (cost < score) {
-        display.classList.add('show');
-    } else if (cost > score) {
-        display.classList.remove('show');
-    }
+    for (let i = 0; i < display.length; i++)
+        if (cost < score) {
+            display[i].classList.add('d-none');
+        } else if (cost > score) {
+            display[i].classList.remove('d-none');
+        }
 }
