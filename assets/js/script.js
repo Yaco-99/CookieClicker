@@ -1,8 +1,9 @@
 const scoreTarget = document.getElementById("score"),
   timerTarget = document.getElementById("bonus"),
   multiplierShop = document.getElementById("multiplierShop"),
-  heroTarget = document.getElementById("hero");
-let score = 0,
+  heroTarget = document.getElementById("hero"),
+  buySound = document.getElementById("buySound");
+let score = 2000,
   multiplierPrice = 200,
   multiplier = 1,
   timing = 0,
@@ -22,14 +23,17 @@ scoreTarget.addEventListener("click", () => {
 });
 
 multiplierShop.addEventListener("click", () => {
+  soudEffect();
   multiplierBuy();
 });
 
 heroTarget.addEventListener("click", () => {
+  soudEffect();
   newHero();
 });
 
 timerTarget.addEventListener("click", () => {
+  soudEffect();
   score -= 600;
   bonusCheck = true;
   let timeLeft = 30;
@@ -98,4 +102,10 @@ function displayScore() {
 function autoClicker() {
   score++;
   displayScore();
+}
+
+function soudEffect() {
+  buySound.pause();
+  buySound.currentTime = 0;
+  buySound.play();
 }
