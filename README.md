@@ -6,14 +6,12 @@ Throughout our journey, we **committed**, numerous times, and achieved a game we
 
 
 ## Languages used
-***
 
 - HTML
 - CSS
 - JavaScript
 
 ## Icon
-***
 
 As the paramount flagship of Cookie domination, Cookie Monster was an obvious choice. 
 
@@ -21,7 +19,6 @@ We did hesitate with Darth Vader though (as the saying goes:  *come to the Dark 
 
 
 ## Rules
-***
 
 Rules aren't much complicated, besides, you will find some explanations given by our lord Cookie Monster.
 
