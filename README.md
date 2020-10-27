@@ -20,7 +20,7 @@ We did hesitate with Darth Vader though (as the saying goes:  *come to the Dark 
 
 ## Rules
 
-Rules aren't much complicated, besides, you will find some explanations given by our lord Cookie Monster.
+Rules aren't much complicated, besides, you will find some in-game explanations given by our lord Cookie Monster.
 
 His time is precious though, don't waste it! Start collecting them Cookies!
 
