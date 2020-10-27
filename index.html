@@ -11,7 +11,7 @@
     <audio src="assets/sound/Cookie_Monster.mp3" id="buySound"></audio>
     <div class="container-fluid">
       <div class="row">
-        <section class="regle col-md-3">
+        <section class="regle col-md-3 mt-3">
           <h2>Règles</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At, omnis.
@@ -27,14 +27,17 @@
           </ul>
           <img src="assets/img/monster.png" alt="Cookie Monster" />
         </section>
-        <section class="cookie col-md-6 d-flex border border-dark">
-          <div id="cookie"></div>
-        </section>
-        <section class="shop col-md-3 d-flex">
-          <div class="score mt-3">
-            <p id="score">0</p>
-            <p class="mb-0" id="multiplier">x1</p>
+        <section class="cookie col-12 col-md-6">
+          <div class="inner-frame d-flex">
+            <div class="score m-3">
+              <p id="score">0</p>
+              <p class="mb-0" id="multiplier">x1</p>
+            </div>
+            <div id="cookie"></div>
           </div>
+        </section>
+        <img class="frame" src="assets/img/frame.png" alt="" />
+        <section class="shop col-md-3 mt-3 d-flex">
           <div>
             <h1>Store</h1>
             <h3>Buy</h3>
