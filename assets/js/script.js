@@ -86,8 +86,8 @@ function displayNone() {
   bonusCheck
     ? "ok"
     : score < 600
-    ? timerTarget.setAttribute("disabled", true)
-    : timerTarget.removeAttribute("disabled");
+      ? timerTarget.setAttribute("disabled", true)
+      : timerTarget.removeAttribute("disabled");
 }
 function displayScore() {
   scoreTarget.innerHTML = score;
