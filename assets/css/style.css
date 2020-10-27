@@ -10807,6 +10807,8 @@ body {
   background-image: url("../img/woodBg.jpg");
   background-size: cover;
   font-family: "Titillium Web", sans-serif;
+  text-shadow: 1px 1px 2px black;
+  color: #fbd259;
 }
 
 .cookie {
@@ -10904,7 +10906,6 @@ body {
 
 .regle {
   overflow: hidden;
-  color: black;
   max-height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -10925,4 +10926,3 @@ body {
   z-index: -1;
   height: 35rem;
 }
-/*# sourceMappingURL=style.css.map */
