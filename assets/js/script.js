@@ -1,9 +1,9 @@
 const scoreTarget = document.getElementById("score"),
-  cookie = document.getElementById("cookie");
-(timerTarget = document.getElementById("bonus")),
-  (multiplierShop = document.getElementById("multiplierShop")),
-  (heroTarget = document.getElementById("hero")),
-  (buySound = document.getElementById("buySound"));
+  cookie = document.getElementById("cookie"),
+  timerTarget = document.getElementById("bonus"),
+  multiplierShop = document.getElementById("multiplierShop"),
+  heroTarget = document.getElementById("hero"),
+  buySound = document.getElementById("buySound");
 let score = 0,
   multiplierPrice = 200,
   multiplier = 1,
